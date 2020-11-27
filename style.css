@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(199, 192, 192); */
+}
+body::before{
+    background: url('images/money1.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+h1{
+    text-align: center;
+    padding: 15px 0;
+    background-color: tomato;
+}
+.container{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 610px;
+    margin: auto;
+    margin-top: 50px;
+}
+.container .flex-col{
+    display: flex;
+    flex-direction: column;
+    margin: 0 14px;
+}
+.container .flex-col input,select{
+    padding: 8px 7px;
+    font-size: 1.3rem;
+    margin: 1px 0;
+    outline: none;
+    background-color: #b7e843;
+    color: black;
+    border-radius: 8px;
+}
+button{
+    background-color: green;
+    color: white;
+    height: 44px;
+    padding: 5px 12px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+}
+.clearBtn{
+    margin-top: 5px;
+    background-color: red;
+    color: black;
+    border-radius: 8px;
+    height: 44px;
+    width: 101px;
+    padding: 5px 12px;
+    font-size: 1.1rem;
+}
+.clearBtn:hover{
+    background-color: tomato;
+    color: white;
+}
+
+/* select#chooseCurrency option[value="us"]    */
+/* { background-image:url('images/money1.jpg');   } */
+
+select option{
+    font-size: 40PX;
+}

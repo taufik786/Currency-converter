@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css"> -->
+    <link rel="stylesheet" href="chosen.min.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <h1>Online Currency Converter</h1>
+    <div class="container">
+
+        <div class="flex-col">
+            <input type="number" placeholder="Enter currency" id="mainCurrency">
+            <select class="chooseCurrency chosen" id="chooseCurrency">
+                
+                <option value="1">Australian Dollar</option>
+                <option value="2">Bangladeshi Taka</option>
+                <option value="3">Bhutan currency</option>
+                <option value="4">Brazilian Real</option>
+                <option value="5">Cambodian riel</option>
+                <option value="6">Canadian Dollar</option>
+                <option value="7">Chinese Yuan</option>
+                <option value="8">Euro</option>
+                <option value="9">Hong Kong Dollar</option>
+                <option value="10">Indian Rupee</option>
+                <option value="11">Indonesian Rupiah</option>
+                <option value="12">Iranian Rial</option>
+                <option value="13">Iraqi Dinar</option>
+                <option value="14">Israeli New Shekel</option>
+                <option value="15">Japanese Yen</option>
+                <option value="16">Kuwaiti Dinar</option>
+                <option value="17">New Zealand Dollar</option>
+                <option value="18">Pakistani Rupee</option>
+                <option value="19">Russian Ruble</option>
+                <option value="20">Saudi Riyal</option>
+                <option value="21">United States Dollar</option>
+                
+
+            </select>
+        </div>
+        <div>
+        <button type="submit" onclick="calculate()">Calculate</button>
+        <button type="reset" id="clearBtn" class="clearBtn">Clear </button>
+    </div>
+        <div class="flex-col">
+            <input type="number" placeholder="your exchange value is " id="convertCurrency">
+            <select class="chosen" id="convertInto">
+
+                <option value="1">Australian Dollar</option>
+                <option value="2">Bangladeshi Taka</option>
+                <option value="3">Bhutan currency</option>
+                <option value="4">Brazilian Real</option>
+                <option value="5">Cambodian riel</option>
+                <option value="6">Canadian Dollar</option>
+                <option value="7">Chinese Yuan</option>
+                <option value="8">Euro</option>
+                <option value="9">Hong Kong Dollar</option>
+                <option value="10">Indian Rupee</option>
+                <option value="11">Indonesian Rupiah</option>
+                <option value="12">Iranian Rial</option>
+                <option value="13">Iraqi Dinar</option>
+                <option value="14">Israeli New Shekel</option>
+                <option value="15">Japanese Yen</option>
+                <option value="16">Kuwaiti Dinar</option>
+                <option value="17">New Zealand Dollar</option>
+                <option value="18">Pakistani Rupee</option>
+                <option value="19">Russian Ruble</option>
+                <option value="20">Saudi Riyal</option>
+                <option value="21">United States Dollar</option>
+            
+            </select>
+        </div>
+    </div>
+
+    <script>
+        $(".chosen").chosen();
+    </script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
