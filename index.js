@@ -1,221 +1,252 @@
-function calculate() {
-    let mainCurrency = document.getElementById('mainCurrency').value;
-    let convertCurrency = document.getElementById('convertCurrency').value;
+// Global Variables
 
-    let chooseCurrency = document.getElementById('chooseCurrency').value;
-    let convertInto = document.getElementById('convertInto').value;
+const addCurrencyBtn = document.querySelector(".add-currency-btn");
+const addCurrencyList = document.querySelector(".add-currency-list");
+const currenciesList = document.querySelector(".currencies");
 
-    if (chooseCurrency === '1') {
-        if (convertInto === '1') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1;
-        }
-        else if (convertInto === '2') {
-            document.getElementById('convertCurrency').value = mainCurrency * 62.23;
-        }
-        else if (convertInto === '3') {
-            document.getElementById('convertCurrency').value = mainCurrency * 54.27;
-        }
-        else if (convertInto === '4') {
-            document.getElementById('convertCurrency').value = mainCurrency * 3.92;
-        }
-        else if (convertInto === '5') {
-            document.getElementById('convertCurrency').value = mainCurrency * 2980.56;
-        }
-        else if (convertInto === '6') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.96;
-        }
-        else if (convertInto === '7') {
-            document.getElementById('convertCurrency').value = mainCurrency * 4.84;
-        }
-        else if (convertInto === '8') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.62;
-        }
-        else if (convertInto === '9') {
-            document.getElementById('convertCurrency').value = mainCurrency * 5.71;
-        }
-        else if (convertInto === '10') {
-            document.getElementById('convertCurrency').value = mainCurrency * 54.36;
-        }
-        else if (convertInto === '11') {
-            document.getElementById('convertCurrency').value = mainCurrency * 10372.00;
-        }
-        else if (convertInto === '12') {
-            document.getElementById('convertCurrency').value = mainCurrency * 31013.91;
-        }
-        else if (convertInto === '13') {
-            document.getElementById('convertCurrency').value = mainCurrency * 878.44;
-        }
-        else if (convertInto === '14') {
-            document.getElementById('convertCurrency').value = mainCurrency * 2.45;
-        }
-        else if (convertInto === '15') {
-            document.getElementById('convertCurrency').value = mainCurrency * 76.63;
-        }
-        else if (convertInto === '16') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.22;
-        }
-        else if (convertInto === '17') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1.05;
-        }
-        else if (convertInto === '18') {
-            document.getElementById('convertCurrency').value = mainCurrency * 117.13;
-        }
-        else if (convertInto === '19') {
-            document.getElementById('convertCurrency').value = mainCurrency * 55.97;
-        }
-        else if (convertInto === '20') {
-            document.getElementById('convertCurrency').value = mainCurrency * 2.77;
-        }
-        else if (convertInto === '21') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.74;
-        }
-        
+// const dataURL = "https://api.exchangeratesapi.io/latest";
 
-    }
-    ////
-    else if(chooseCurrency === '2') {
-        if (convertInto === '1') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.016;
-        }
-        else if (convertInto === '2') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1;
-        }
-        else if (convertInto === '3') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.87;
-        }
-        else if (convertInto === '4') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.063;
-        }
-        else if (convertInto === '5') {
-            document.getElementById('convertCurrency').value = mainCurrency * 47.94;
-        }
-        else if (convertInto === '6') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.015;
-        }
-        else if (convertInto === '7') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.078;
-        }
-        else if (convertInto === '8') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.0099;
-        }
-        else if (convertInto === '9') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.092;
-        }
-        else if (convertInto === '10') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.87;
-        }
-        else if (convertInto === '11') {
-            document.getElementById('convertCurrency').value = mainCurrency * 166.86;
-        }
-        else if (convertInto === '12') {
-            document.getElementById('convertCurrency').value = mainCurrency * 497.17;
-        }
-        else if (convertInto === '13') {
-            document.getElementById('convertCurrency').value = mainCurrency * 14.08;
-        }
-        else if (convertInto === '14') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.039;
-        }
-        else if (convertInto === '15') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1.23;
-        }
-        else if (convertInto === '16') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.0036;
-        }
-        else if (convertInto === '17') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.017;
-        }
-        else if (convertInto === '18') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1.88;
-        }
-        else if (convertInto === '19') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.89;
-        }
-        else if (convertInto === '20') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.044;
-        }
-        else if (convertInto === '21') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.012;
-        }
-        
-    }
-    //////
-    else if(chooseCurrency === '3') {
-        if (convertInto === '1') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.018;
-        }
-        else if (convertInto === '2') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1.15;
-        }
-        else if (convertInto === '3') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1;
-        }
-        else if (convertInto === '4') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.072;
-        }
-        else if (convertInto === '5') {
-            document.getElementById('convertCurrency').value = mainCurrency * 55.04;
-        }
-        else if (convertInto === '6') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.018;
-        }
-        else if (convertInto === '7') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.089;
-        }
-        else if (convertInto === '8') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.011;
-        }
-        else if (convertInto === '9') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.11;
-        }
-        else if (convertInto === '10') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1.00;
-        }
-        else if (convertInto === '11') {
-            document.getElementById('convertCurrency').value = mainCurrency * 191.63;
-        }
-        else if (convertInto === '12') {
-            document.getElementById('convertCurrency').value = mainCurrency * 570.86;
-        }
-        else if (convertInto === '13') {
-            document.getElementById('convertCurrency').value = mainCurrency * 16.17;
-        }
-        else if (convertInto === '14') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.045;
-        }
-        else if (convertInto === '15') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1.41;
-        }
-        else if (convertInto === '16') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.0041;
-        }
-        else if (convertInto === '17') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.019;
-        }
-        else if (convertInto === '18') {
-            document.getElementById('convertCurrency').value = mainCurrency * 2.16;
-        }
-        else if (convertInto === '19') {
-            document.getElementById('convertCurrency').value = mainCurrency * 1.03;
-        }
-        else if (convertInto === '20') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.051;
-        }
-        else if (convertInto === '21') {
-            document.getElementById('convertCurrency').value = mainCurrency * 0.014;
-        }
-        
-    }
-    /////
+const initiallyDisplayedCurrencies = ["USD", "INR", "GBP", "JPY", "RUB"];
+let baseCurrency;
+let baseCurrencyAmount;
 
-    
+let currencies = [
+  {
+    name: "US Dollar",
+    abbreviation: "USD",
+    symbol: "\u0024",
+    flagURL: "images/us.gif",
+    rate: 1.16
+  },
+  {
+    name: "Indian Rupes",
+    abbreviation: "INR",
+    symbol: "₹",
+    flagURL: "images/inr.jpg",
+    rate: 86.60
+  },
+  {
+    name: "Euro",
+    abbreviation: "EUR",
+    symbol: "\u20AC",
+    flagURL: "images/euro.jpg",
+    rate: 1
+  },
+  {
+    name: "British Pound",
+    abbreviation: "GBP",
+    symbol: "\u00A3",
+    flagURL: "images/uk.gif",
+    rate: 0.96
+  },
+  {
+    name: "Japanese Yen",
+    abbreviation: "JPY",
+    symbol: "\u00A5",
+    flagURL: "images/jp.gif",
+    rate: 121.98
+  },
+  {
+    name: "Canadian Dollar",
+    abbreviation: "CAD",
+    symbol: "\u0024",
+    flagURL: "http://www.geonames.org/flags/l/ca.gif",
+    rate: 1.55
+  },
+  {
+    name: "Swiss Franc",
+    abbreviation: "CHF",
+    symbol: "\u0043\u0048\u0046",
+    flagURL: "http://www.geonames.org/flags/l/ch.gif",
+    rate: 1.07
+  },
 
+  {
+    name: "New Zealand Dollar",
+    abbreviation: "NZD",
+    symbol: "\u0024",
+    flagURL: "http://www.geonames.org/flags/l/nz.gif",
+    rate :1.76
+  },
+  {
+    name: "Mexican Peso",
+    abbreviation: "MXN",
+    symbol: "\u0024",
+    flagURL: "http://www.geonames.org/flags/l/mx.gif"
+  },
+  {
+    name: "Singapore Dollar",
+    abbreviation: "SGD",
+    symbol: "\u0024",
+    flagURL: "http://www.geonames.org/flags/l/sg.gif",
+    rate : 24.77
+  },
+  {
+    name: "South Korean Won",
+    abbreviation: "KRW",
+    symbol: "\u20A9",
+    flagURL: "http://www.geonames.org/flags/l/kr.gif",
+    rate: 1323.31
+  },
+  {
+    name: "Turkish Lira",
+    abbreviation: "TRY",
+    symbol: "\u20BA",
+    flagURL: "http://www.geonames.org/flags/l/tr.gif",
+    rate : 9.77
+  },
+  {
+    name: "Brazilian Real",
+    abbreviation: "BRL",
+    symbol: "\u0052\u0024",
+    flagURL: "http://www.geonames.org/flags/l/br.gif",
+    rate :6.68
+  },
+  {
+    name: "Indonesian Rupiah",
+    abbreviation: "IDR",
+    symbol: "\u0052\u0070",
+    flagURL: "http://www.geonames.org/flags/l/id.gif",
+    rate: 17108.80
+  }
+  
+  
+];
+
+// Event Listeners
+
+addCurrencyBtn.addEventListener("click", addCurrencyBtnClick);
+
+function addCurrencyBtnClick(event) {
+  addCurrencyBtn.classList.toggle("open");
 }
 
-// Clear button
-let inputs = document.querySelectorAll('input');
-let clearBtn = document.getElementById('clearBtn')
-clearBtn.addEventListener('click', ()=>{
-    inputs.forEach(input => input.value='');
-})
- 
+addCurrencyList.addEventListener("click", addCurrencyListClick);
+
+function addCurrencyListClick(event) {
+  const clickedListItem = event.target.closest("li");
+  if(!clickedListItem.classList.contains("disabled")) {
+    const newCurrency = currencies.find(c => c.abbreviation===clickedListItem.getAttribute("data-currency"));
+    if(newCurrency) newCurrenciesListItem(newCurrency);
+  }
+}
+
+currenciesList.addEventListener("click", currenciesListClick);
+
+function currenciesListClick(event) {
+  if(event.target.classList.contains("close")) {
+    const parentNode = event.target.parentNode;
+    parentNode.remove();
+    addCurrencyList.querySelector(`[data-currency=${parentNode.id}]`).classList.remove("disabled");
+    if(parentNode.classList.contains("base-currency")) {
+      const newBaseCurrencyLI = currenciesList.querySelector(".currency");
+      if(newBaseCurrencyLI) {
+        setNewBaseCurrency(newBaseCurrencyLI);
+        baseCurrencyAmount = Number(newBaseCurrencyLI.querySelector(".input input").value);
+      }
+    }
+  }
+}
+
+function setNewBaseCurrency(newBaseCurrencyLI) {
+  newBaseCurrencyLI.classList.add("base-currency");
+  baseCurrency = newBaseCurrencyLI.id;
+  const baseCurrencyRate = currencies.find(currency => currency.abbreviation===baseCurrency).rate;
+  currenciesList.querySelectorAll(".currency").forEach(currencyLI => {
+    const currencyRate = currencies.find(currency => currency.abbreviation===currencyLI.id).rate;
+    const exchangeRate = currencyLI.id===baseCurrency ? 1 : (currencyRate/baseCurrencyRate).toFixed(4);
+    currencyLI.querySelector(".base-currency-rate").textContent = `1 ${baseCurrency} = ${exchangeRate} ${currencyLI.id}`;
+  });
+}
+
+currenciesList.addEventListener("input", currenciesListInputChange);
+
+function currenciesListInputChange(event) {
+  const isNewBaseCurrency = event.target.closest("li").id!==baseCurrency;
+  if(isNewBaseCurrency) {
+    currenciesList.querySelector(`#${baseCurrency}`).classList.remove("base-currency");
+    setNewBaseCurrency(event.target.closest("li"));
+  }
+  const newBaseCurrencyAmount = isNaN(event.target.value) ? 0 : Number(event.target.value);
+  if(baseCurrencyAmount!==newBaseCurrencyAmount || isNewBaseCurrency) {
+    baseCurrencyAmount = newBaseCurrencyAmount;
+    const baseCurrencyRate = currencies.find(currency => currency.abbreviation===baseCurrency).rate;
+    currenciesList.querySelectorAll(".currency").forEach(currencyLI => {
+      if(currencyLI.id!==baseCurrency) {
+        const currencyRate = currencies.find(currency => currency.abbreviation===currencyLI.id).rate;
+        const exchangeRate = currencyLI.id===baseCurrency ? 1 : (currencyRate/baseCurrencyRate).toFixed(4);
+        currencyLI.querySelector(".input input").value = exchangeRate*baseCurrencyAmount!==0 ? (exchangeRate*baseCurrencyAmount).toFixed(4) : "";
+      }
+    });
+  }
+}
+
+currenciesList.addEventListener("focusout", currenciesListFocusOut);
+
+function currenciesListFocusOut(event) {
+  const inputValue = event.target.value;
+  if(isNaN(inputValue) || Number(inputValue)===0) event.target.value="";
+  else event.target.value = Number(inputValue).toFixed(4);
+}
+
+currenciesList.addEventListener("keydown", currenciesListKeyDown);
+
+function currenciesListKeyDown(event) {
+  if(event.key==="Enter") event.target.blur();
+}
+
+// Auxiliary Functions
+
+function populateAddCyrrencyList() {
+  for(let i=0; i<currencies.length; i++) {
+    addCurrencyList.insertAdjacentHTML(
+      "beforeend", 
+      `<li data-currency=${currencies[i].abbreviation}>
+        <img src=${currencies[i].flagURL} class="flag"><span>${currencies[i].abbreviation} - ${currencies[i].name}</span>
+      </li>`
+    );
+  }
+}
+
+function populateCurrenciesList() {
+  for(let i=0; i<initiallyDisplayedCurrencies.length; i++) {
+    const currency = currencies.find(c => c.abbreviation===initiallyDisplayedCurrencies[i]);
+    if(currency) newCurrenciesListItem(currency);
+  }
+}
+
+function newCurrenciesListItem(currency) {
+  if(currenciesList.childElementCount===0) {
+    baseCurrency = currency.abbreviation;
+    baseCurrencyAmount = 0;
+  }
+  addCurrencyList.querySelector(`[data-currency=${currency.abbreviation}]`).classList.add("disabled");
+  const baseCurrencyRate = currencies.find(c => c.abbreviation===baseCurrency).rate;
+  const exchangeRate = currency.abbreviation===baseCurrency ? 1 : (currency.rate/baseCurrencyRate).toFixed(4);
+  const inputValue = baseCurrencyAmount ? (baseCurrencyAmount*exchangeRate).toFixed(4) : "";
+
+  currenciesList.insertAdjacentHTML(
+    "beforeend",
+    `<li class="currency ${currency.abbreviation===baseCurrency ? "base-currency" : ""}" id=${currency.abbreviation}>
+      <img src=${currency.flagURL} class="flag">
+      <div class="info">
+        <p class="input"><span class="currency-symbol">${currency.symbol}</span><input placeholder="0.0000" value=${inputValue}></p>
+        <p class="currency-name">${currency.abbreviation} - ${currency.name}</p>
+        <p class="base-currency-rate">1 ${baseCurrency} = ${exchangeRate} ${currency.abbreviation}</p>
+      </div>
+      <span class="close">&times;</span>
+    </li>`
+  );
+}
+populateAddCyrrencyList();
+populateCurrenciesList();
+
+// fetch(dataURL)
+//   .then(res => res.json())
+//   .then(data => {
+//     document.querySelector(".date").textContent = data.date;
+//     data.rates["EUR"] = 1;
+//     currencies = currencies.filter(currency => data.rates[currency.abbreviation]);
+//     currencies.forEach(currency => currency.rate = data.rates[currency.abbreviation]);
+//   })
+//   .catch(err => console.log(err));
